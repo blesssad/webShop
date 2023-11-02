@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Cinzel-Regular';
+    src: url(/fonts/Cinzel-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Cinzel-Regular-Medium';
+    src: url(/fonts/Cinzel-Medium.ttf);
+}
+
+header{
+    margin: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}
+
+.rightHeader{
+    display: flex;
+}
+
+.menuButton{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.logo{
+    position: absolute;
+    margin: 20px auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-size: x-large;
+    letter-spacing: 1.5px;
+}
+
+.heart{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/heart.svg);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.heart.active{
+    background-image: url(../img/activeHeart.svg);
+}
+
+.cart{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/cart.svg);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.cart.active{
+    background-image: url(../img/activeCart.svg);
+}
+
+.profile{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/profile.svg);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.profile.active{
+    background-image: url(../img/activeProfile.svg);
+}
+
+.search{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/search.svg);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.search.active{
+    background-image: url(../img/activeSearch.svg);
+}
+
+.closeButton{
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+}
+
+.text{
+    height: 2000px;
+}
+
+.sticky{
+    position: fixed;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu{
+    position: fixed;
+    display: block;
+    width:25%;
+    height:100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.open{
+    transform: translateX(0);
+}
+
+.buttonSpan{
+    display: none;
+}
+
+button{
+    background: none;
+    cursor:pointer;
+    border: none;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Cinzel-Regular-Medium, serif;
+}
+
+a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.8px;
+    background-color: black;
+    margin-top: 30px;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+.blockForCloseButton{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mainPhoto{;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.photoContainer{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: normal;
+}
+
+.nav-item.active{
+    display: block;
+    width: 100%;
+    height: 1.8px;
+    background-color: black;
+    margin-top: 30px;
+    transition: transform 0.3s ease-out;
+}
