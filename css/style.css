@@ -203,3 +203,132 @@ a:hover::after {
     margin-top: 30px;
     transition: transform 0.3s ease-out;
 }
+
+.loadTime{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    ;
+    font-family: Cinzel-Regular-Medium, serif;
+    font-size: 22px;
+}
+.loadTimeText{
+    font-family: Cinzel-Regular-Medium, serif;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.saving-area, .loading-area {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 0 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.confirm-button, .load-button, .cancel-button, .save-button, .not-save-button{
+    padding: 15px;
+    margin-right: 10px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.form {
+    margin-top: 15px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.load-area, .save-area{
+    padding: 15px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+table{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.loader{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errorOfLoading{
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.commentsList{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.comment{
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.commentName{
+    font-size: 20px;
+}
+
+.commentEmail{
+    color: #555; /* Темно-серый цвет */
+    margin-bottom: 10px; /* Небольшой отступ снизу */
+}
+
+.commentBody{
+
+}
+
+.commentsTitle{
+    margin-left: 20px;
+    width: 100px;
+}
+
+

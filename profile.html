@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/changeHeaderPosition.js"></script>
     <script src="scripts/currentPage.js"></script>
+    <script src="scripts/loadTable.js"></script>
 </head>
 <body>
 <div class="menu">
@@ -50,6 +51,35 @@
         </a>
     </div>
 </header>
+<main>
+    <div class="loading-area" style="display: none">
+    </div>
+
+    <form id="form" class="form">
+        <div class="form-group">
+            <b><label>Количество дней:</label></b>
+
+            <br><input type="radio" id="5days" name="days_count" value="5" required>
+            <label for="5days">5 дней</label>
+
+            <br><input type="radio" id="6days" name="days_count" value="6">
+            <label for="6days">6 дней</label>
+        </div>
+
+        <div class="form-group">
+            <b><label for="max-lessons-count">Максимальное количество занятий:</label></b>
+            <input class="max-lessons-count" type="number" id="max-lessons-count" name="max-lessons-count" min="0" max="20" maxlength="255" placeholder="Введите кол-во занятий" required>
+        </div>
+
+        <button class="confirm-button" type="submit">Применить</button>
+    </form>
+
+    <div class="saving-area" style="display: none">
+    </div>
+
+    <div id="table" class="table">
+    </div>
+</main>
 <script src="scripts/openMenu.js"></script>
 <script src="scripts/closeMenu.js"></script>
 </body>
