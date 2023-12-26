@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/changeHeaderPosition.js"></script>
     <script src="scripts/currentPage.js"></script>
-    <script src="scripts/loadTime.js"></script>
-    <script src="scripts/commentsFromJSONPlaceholder.js"></script>
+    <script src="scripts/slider.js"></script>
+<!--    <script src="scripts/loadTime.js"></script>-->
+<!--    <script src="scripts/commentsFromJSONPlaceholder.js"></script>-->
 </head>
 <body>
     <div class="menu">
@@ -21,52 +22,104 @@
         </div>
     </div>
     <header>
-        <button class="menuButton">
+        <div class="headerContent">
+            <button class="menuButton">
             <span class="buttonSpan">
                 Menu
             </span>
-        </button>
-        <a href="index.html" class="logo" >
-            Tristache
-        </a>
-        <div class="rightHeader">
-            <a href="profile.html" class="profile">
+            </button>
+            <!--   открытие меню не должно двигать logo         -->
+            <a href="index.html" class="logo" >
+                Tristache
+            </a>
+            <div class="rightHeader">
+                <a href="profile.html" class="profile">
                 <span class="buttonSpan">
                     Profile
                 </span>
-            </a>
-            <a href="wishlist.html" class="heart">
+                </a>
+                <a href="wishlist.html" class="heart">
                 <span class="buttonSpan">
                     Heart
                 </span>
-            </a>
-            <a  href="cart.html" class="cart">
+                </a>
+                <a  href="cart.html" class="cart">
                 <span class="buttonSpan">
                     Cart
                 </span>
-            </a>
-            <a href="search.html" class="search">
+                </a>
+                <a href="search.html" class="search">
                 <span class="buttonSpan">
                     Search
                 </span>
-            </a>
+                </a>
+            </div>
         </div>
     </header>
+    <div class="pass">
+    </div>
     <div class="photoContainer">
-        <img src="img/mainPhoto.jpg" alt="photo" class="mainPhoto">
+        <div class="photo">
+            <img src="img/jeansDress.JPEG" alt="photo" class="mainPhoto">
+        </div>
+        <div class="photo">
+            <img src="img/IMG_0592.JPG" alt="photo" class="mainPhoto">
+        </div>
     </div>
-    <div class="commentsTitle">
-        <h2>Коментарии:</h2>
+    <div class="introduceContainer">
+        <div class="introduceText">
+            Tristache - это про поиск баланса в понятии женственности и красоты.
+            В основе бренда лежат две линии : легкость и изящество линий, помогающее почувствовать себя нежной и открытой миру, и противоположные этому грубость и «андеграунд», проявляемые через джинсовую капсулу.
+            Основатель бренда, Полина Tristache (Полина Горюнова), уверена, что во всем должен быть баланс.
+            Именно поэтому в ее творчестве прослеживаются абсолютно разные ветви, которые, по итогу, могут стать интересным симбиозом разных форм и фактур, нежности и грубости.
+        </div>
+        <div class="introducePhoto">
+            <img src="img/IMG_0319.JPEG" alt="photo" class="mainPhoto">
+        </div>
     </div>
-    <div class="loader" >
-        <img src="img/loading.gif" alt="Animated GIF" width="100px" height="100px">
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <a href="profile.html">
+                    <img src="img/IMG_0319.JPEG">
+                </a>
+                <div class="caption">DRESSES</div>
+            </div>
+            <div class="item">
+                <a href="cart.html">
+                    <img src="img/sword.jpg">
+                </a>
+                <div class="caption">JEANS</div>
+            </div>
+            <div class="item">
+                <a href="profile.html">
+                    <img src="img/oE1Gr09-9R8.jpg">
+                </a>
+                <div class="caption">T-SHIRTS</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"> < </button>
+            <button id="next"> > </button>
+        </div>
     </div>
-    <div class="errorOfLoading">
-        Ошибка загрузки данных!
-    </div>
-    <div class = "commentsList">
+    <script src="scripts/slider.js"></script>
 
-    </div>
+<!--    <div class="commentsTitle">-->
+<!--        <h2>Коментарии:</h2>-->
+<!--    </div>-->
+<!--    <div class="loader" >-->
+<!--        <img src="img/loading.gif" alt="Animated GIF" width="100px" height="100px">-->
+<!--    </div>-->
+<!--    <div class="errorOfLoading">-->
+<!--        Ошибка загрузки данных!-->
+<!--    </div>-->
+<!--    <div class = "commentsList">-->
+
+<!--    </div>-->
+    <footer>
+        Hello!
+    </footer>
     <script src="scripts/openMenu.js"></script>
     <script src="scripts/closeMenu.js"></script>
 </body>
